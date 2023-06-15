@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>AJAX GET Request</Title>
+      <Shortcut>ajaxget</Shortcut>
+      <Description>Snippet for making an AJAX GET request</Description>
+      <Author>Your Name</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="JavaScript">
+        <![CDATA[
+$.ajax({
+    method: "GET",
+    url: "$url$",
+    beforeSend: function () {
+        $cursor$
+    },
+    success: function (res) {
+        $cursor$
+    },
+    error: function (xhr) {
+        $cursor$
+    }
+});
+        ]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>url</ID>
+          <ToolTip>The URL for the AJAX request</ToolTip>
+          <Default>/ContractSigner/BeginSign</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
