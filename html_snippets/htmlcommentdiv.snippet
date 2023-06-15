@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>HTML Div with Comment Lines</Title>
+      <Shortcut>htmlcommentdiv</Shortcut>
+      <Description>Snippet for creating an HTML div with comment lines</Description>
+      <Author>Your Name</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="HTML">
+        <![CDATA[
+<!-- START: $divName$ -->
+<div class="$divClass$">
+
+</div>
+<!-- END: $divName$ -->
+        ]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>divName</ID>
+          <ToolTip>The name of the div</ToolTip>
+          <Default>XXX</Default>
+        </Literal>
+        <Literal>
+          <ID>divClass</ID>
+          <ToolTip>The CSS class for the div</ToolTip>
+          <Default>row</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
